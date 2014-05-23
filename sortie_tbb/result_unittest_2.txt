@@ -1,0 +1,79 @@
+Wed Mar 5 11:00:05 EST 2014
+TestMath test was successful.
+
+real	0m10.384s
+user	0m10.377s
+sys	0m0.004s
+TestSimManager test was successful.
+
+real	0m0.020s
+user	0m0.008s
+sys	0m0.008s
+TestLightFiltering test was successful.
+
+real	0m0.079s
+user	0m0.068s
+sys	0m0.008s
+TestTreePopulation test was successful.
+
+real	0m11.837s
+user	0m11.821s
+sys	0m0.020s
+TestGLILight test was successful.
+
+real	0m0.071s
+user	0m0.060s
+sys	0m0.012s
+Deleting p_oSimManager
+TestGLIMap test was successful.
+
+real	0m0.377s
+user	0m0.356s
+sys	0m0.048s
+Exception thrown - message: assertion failed
+- Expression: fabs(fGLIActual - fGLIExpected) < 0.1
+ in file TestGapLight.cpp at line 150.
+real	0m0.030s
+user	0m0.016s
+sys	0m0.016s
+TestGLIPoints test was successful.
+
+real	0m0.067s
+user	0m0.040s
+sys	0m0.028s
+TestSailLight test was successful.
+
+real	0m0.223s
+user	0m0.220s
+sys	0m0.008s
+TestLightOrg test was successful.
+
+real	0m0.237s
+user	0m0.224s
+sys	0m0.012s
+Behavior basalarealightshell finish in:574.463ms
+TestBasalAreaLight test was successful.
+
+real	0m0.828s
+user	0m2.516s
+sys	0m0.080s
+TestConstantGLI test was successful.
+
+real	0m0.041s
+user	0m0.032s
+sys	0m0.008s
+TestAverageLight test was successful.
+
+real	0m0.465s
+user	0m0.476s
+sys	0m0.020s
+TestLightDepSeedSurvival test was successful.
+
+real	0m0.337s
+user	0m0.324s
+sys	0m0.012s
+TestQuadratGLILight test was successful.
+
+real	0m0.434s
+user	0m0.408s
+sys	0m0.028s

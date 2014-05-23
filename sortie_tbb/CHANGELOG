@@ -1,0 +1,53 @@
+#CHANGELOG
+#March 2014 Guy Francoeur, Guillaume Lahaie
+
+##Changed files for tbb
+Interface.cpp (#include pour la compilation)
+SORTIE.cpp //limiter le nombre de thread.
+LightOrg.cpp //le gros du code et de la parallelisation.
+LightBase.cpp //Condition de course
+LightBase.h //Condition de course: initialiser et détruire la matrice
+GLIMap.cpp //Condition de course
+GLILight.cpp //Condition de course
+QuadratGLILight.cpp //Condition de course
+SailLight.cpp //Condition de course
+LightDepSeedSurvival //Condition de courseInterface.cpp (#include pour la compilation)
+
+
+#--------------------------------------------------------------------
+##More C++ should be used. Starting with the includes.
+
+##makefile in Interface_Library should use -O2 instead of -g
+
+## In Interface_Library folder in the file Interface.cpp add these include:
+#include <cstdlib>
+#include <cstring>
+#include <cstdio> // instead of <stdio.h>
+
+##--------------
+in Files : PlatformFuncs.cpp
+ #ifdef linux  
+    should be replaced by 
+ #ifdef __linux__
+
+reason : C++ (Standard C++11)
+reference : http://sourceforge.net/p/predef/wiki/OperatingSystems/
+
+##--------------
+In most files:
+  for (int i=0; i<10; ++i){
+    for (int j=0; j<10; ++j) {
+      cout << i << ", " << j << endl;
+    }
+  }
+//or  ***
+  for (int i=0; i!=10; ++i){
+    for (int j=0; j!=10; ++j) {
+      cout << i << ", " << j << endl;
+    }
+  }
+
+faster code
+int i=0
+++i
+i<0 or i!=0 (c++ way)
